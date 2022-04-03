@@ -45,6 +45,7 @@ RUN curl -o v1.20.3-at.20200401.01.tar.gz \
 	&& tar -axf /tmp/v1.20.3-at.20200401.01.tar.gz \
 		--strip-components=1
 
+WORKDIR /tmp/wget-1.14.lua.20160530-955376b
 RUN ./configure --with-ssl=gnutls --disable-nls \
 	&& make \
 	&& cp src/wget /usr/bin/wget-lua \
