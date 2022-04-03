@@ -41,7 +41,7 @@ RUN apt-get install -y --no-install-recommends \
 
 WORKDIR /tmp
 RUN curl -o wget-1.14.lua.LATEST.tar.bz2 \
-		https://warriorhq.archiveteam.org/downloads/wget-lua/wget-1.14.lua.LATEST.tar.bz2 \
+		https://github.com/ArchiveTeam/wget-lua/archive/refs/tags/v1.20.3-at.20200401.01.tar.gz \
 	&& tar -jxf /tmp/wget-1.14.lua.LATEST.tar.bz2 \
 		--strip-components=1
 
